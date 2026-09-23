@@ -1,0 +1,320 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title>JiYu Trainer 說明文件</title>
+    <style>
+        html {
+            position: relative;
+        }
+        body {
+            position: relative;
+            font-family: "Microsoft YaHei", Tahoma, sans-serif;
+            margin: 15px;
+            padding: 0;
+        }
+        .img {
+           text-align: center; 
+        }
+        img {
+            max-width: 90%;
+        }
+
+        .alert {
+            display: block;
+            position: relative;
+            padding: 12px 20px;
+            margin-bottom: 1rem;
+            border: 1px solid transparent;
+            border-radius: 4px;
+        }
+        .alert-danger {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+        .alert-warning {
+            color: #856404;
+            background-color: #fff3cd;
+            border-color: #ffeeba;
+        }
+        .alert-success {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+        .alert-primary {
+            color: #004085;
+            background-color: #cce5ff;
+            border-color: #b8daff;
+        }
+        .alert-hollow {
+            background-color: #fff;
+        }
+        .alert-blcak {
+            background-color: #fff;
+            border-color: #999;
+            color: #000;
+        }
+
+        .kbd {
+            display: inline-block;
+            color: #fff;
+            background-color: #282828;
+            border-radius: 6px;
+            padding: 5px 10px;
+            margin: 0 8px;
+        }
+
+        .mark {
+            background-color: #ffd04c;
+        }
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            color: #fff;
+            background-color: #37b0ff;
+            border-radius: 14px;
+            padding: 5px 10px;
+        }
+        .btn:hover,.btn:active {
+            background-color: #006bef;
+            text-decoration: none;
+        }
+
+        /* style block defining vertical scrollbar */
+        @set my-v-scrollbar {
+            .prev {
+                display: none;
+            }
+            .next {
+                display: none;
+            }
+            .base,
+            .next-page,
+            .prev-page {
+                background-color: #f3f3f3;
+                border: none;
+            }
+            .slider {
+                background: #ccc;
+                border-radius: 6px;
+                border: 2px solid #f3f3f3;
+            }
+            .slider:hover {
+                background: #999;
+            }
+            .slider:active {
+                background: #888;
+            }
+            .base:disabled {
+                background: transparent;
+            }
+            .base {
+                width: 10px;
+            }
+            /* explicit declaration of its width */
+            .corner {
+                background: transparent;
+            }
+        }
+        .area {
+            position: absolute;
+            left: 150px;
+            top: 100px;
+            right: 0;
+            bottom: 0;
+            overflow: hidden;
+            overflow-y: scroll;
+            vertical-scrollbar: my-v-scrollbar;
+        }
+        .area .page {
+            margin: 10px;
+        }
+        .catalog {
+            position: absolute;
+            width: 150px;
+            top: 100px;
+            left: 0;
+            bottom: 0;
+            border-right: 1px solid #a0a0a0;
+        }
+        .catalog a {
+            display: block;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+    <a href="#"></a>
+
+    <div style="text-align: center; padding-top: 8px;"><img src="res:logo-text.png" /></div>
+    <h2 style="text-align: center; padding-top: 0;margin-top: 0;">帮助文档</h2>
+
+    <div class="area">
+        <div id="introd" class="page">
+            <h3 style="color:#ff8b0d">简介</h3>
+            <p>
+                <span style="color:#006bef">本軟體研發目的就是為了對抗極域電子教室，如果您的學校電腦教室使用極域電子教室來控制學生電腦的話，本軟體很可能會幫到你。</span><br />
+                這是一個可以使 <span class="mark">極域電子教室全螢幕廣播失效</span> 的軟體，也就是說，在被老師全螢幕廣播時，會將其自動調整為<span class="mark">視窗模式</span>，<b>你不僅可以自由操作電腦，也還可以看老師的示範，自由＋學習兩不誤</b>；其還可以防止被老師控制，以及自動關閉「<b>黑屏安靜</b>」限制；由於本軟體是將全螢幕調整為視窗，因此老師並不會發現你斷線或是進行了非預期操作。
+            </p>
+            <h5 style="color:#ff8b0d">主要功能</h5>
+            <ul>
+                <li>在不影響極域正常運行的情況下將「全螢幕廣播」轉為「視窗廣播」模式，您不僅可自由操作電腦，也可看老師講解課程。</li>
+                <li>本軟體內建了強制結束、啟動與停止極域 StudentMain.exe 處理程序功能，無需依賴其他工具。</li>
+                <li>內建破解極域解鎖與解除安裝密碼功能，支援新版極域。</li>
+                <li>反監視功能，開啟反監視後，教師端便無法監視您所使用的電腦。</li>
+                <li>防控制功能，防止教師透過極域控制您所使用的電腦。</li>
+                <li>監控極域遠端執行命令，您可以自由選擇是否允許教師端遠端執行的命令。</li>
+                <li>解除網路控制，防止教師限制您電腦的網路存取。</li>
+                <li>更多功能開發中……</li>
+            </ul>
+            <h3 style="color:#ff8b0d">安装方法</h3>
+            <p>
+                本軟體不依賴任何外部執行階段程式庫（Runtime），您只需複製一個 <b>JiYuTrainer.exe</b> 至目標電腦即可執行，本軟體已將所需的 DLL 內建打包，會自動進行釋放與載入。
+            </p>
+            <h3 style="color:#ff8b0d">操作方法</h3>
+            <p>
+                <span style="color:#006bef">本軟體專為新手設計，預設情況下，您不需要修改任何參數，直接執行 exe 並最小化即可，軟體會自動在背景運作。</span><br />
+                若預設模式無法滿足您的需求，可點選主介面右下角的「主控台」按鈕開啟主控台進行自訂設定。<br />
+                具體設定說明可參見「軟體介面」>「程式設定說明」章節。
+            </p>
+        </div>
+        <div id="interface" class="page" style="display: none;">
+            <h5 style="color:#ff8b0d">主介面</h5>
+            <p>
+                主介面上半部是控制極域的狀態資訊，下半部是操作按鈕：
+            </p>
+            <div class="img"><img src="res:JiYuTrainerHelp1.png" /></div>
+            <ol>
+                <li>開啟此說明視窗</li>
+                <li>置頂 / 取消置頂本軟體主視窗</li>
+                <li>強制結束 / 啟動極域主處理程序</li>
+                <li>開啟<span class="mark">主控台</span></li>
+                <li>電腦電源操作與結束軟體</li>
+            </ol>
+            <h5 style="color:#ff8b0d">主控台介面</h5>
+            <div class="img"><img src="res:JiYuTrainerHelp2.png" style="width:280px" /></div><br />
+        
+            程式設定說明：
+            <ol>
+                <li>是否監控極域執行程序。因為教師可透過極域遠端執行 exe，這可能會對您造成影響，勾選此項後教師遠端執行任何 exe 都會跳出提示詢問您是否允許操作。</li>
+                <li>勾選此選項後可允許螢幕廣播視窗置頂（若您需要置頂廣播視窗邊看邊操作），預設是不允許的。</li>
+                <li>是否允許教師透過極域結束您電腦上的處理程序，預設不允許。</li>
+                <li>是否允許教師透過極域在您的電腦上執行程式或執行 CMD 命令，預設會在執行時彈出對話框詢問您是否允許；若勾選此選項則不提示，直接阻止。</li>
+                <li>是否允許教師透過極域關閉您電腦上的視窗，預設不允許。</li>
+                <li>是否自動檢查更新，更新至最新版本可獲得最佳軟體使用體驗，包含新功能與問題修復。</li>
+                <li>進階設定，內有更多細項配置。</li>
+                <li>本功能可卸載極域的網路過濾驅動程式，防止教師透過極域限制電腦上網。開機後卸載一次即可。</li>
+                <li>是否允許教師透過極域控制您的電腦，取消勾選此項時教師將無法使用極域遠端控制您的電腦。預設不允許。</li>
+                <li>是否允許教師透過極域監視您的電腦，取消勾選此項時教師端所看到的螢幕畫面為黑畫面，且無法使用「監視」功能監視您的電腦。預設允許。</li>
+                <li>本軟體可破解極域的解鎖與解除安裝密碼，支援已加密的新版極域。</li>
+                <li>本軟體預設會自動尋找極域主處理程序的路徑，但若電腦上的極域安裝於非預設路徑時，軟體可能無法自動定位，您可點選此項自訂極域主處理程序的路徑。</li>
+            </ol>
+            提示：<b>設定必須儲存才能生效。</b><br />
+            複製程式至隨身碟時可一併複製設定檔 JiYuTrainer.ini，這樣複製到新電腦時就無需重新設定。
+        </div>
+        <div id="bordcast" class="page" style="display: none;">
+            <h3 style="color:#ff8b0d">螢幕廣播視窗的改動</h3>
+            <div class="img"><img src="res:JiYuTrainerHelp3.png" /></div>
+            <p style="color:#006bef">
+                為了保護您免受極域的控制，JiYuTrainer 加入了兩個選單項目，點選圖示或在廣播視窗上按滑鼠右鍵開啟選單，即可操作螢幕廣播視窗。
+            </p>
+        </div>
+        <div id="key" class="page" style="display: none;">
+            <h3 style="color:#ff8b0d">快捷鍵</h3>
+
+            <h5 style="color:#ff8b0d"><span class="kbd">Ctrl+Alt+D</span>快速顯示 / 隱藏視窗</h5>
+            <p>
+                此快捷鍵可用於老師巡視時快速隱藏 JiYuTrainer 的視窗。
+            </p>
+            <h5 style="color:#ff8b0d"><span class="kbd">Ctrl+Alt+F</span>緊急全螢幕</h5>
+            <p>
+                此快捷鍵可用於老師走近時快速切換為全螢幕，老師離開後再次按下即可切回視窗模式（僅在教師端開啟全螢幕廣播時有效）。<br />
+                （當然，您也可以在廣播視窗按右鍵，選擇「廣播視窗全螢幕」來切換全螢幕狀態）。
+            </p>
+            <hr/>
+            <p>
+                提示：您可以在「軟體進階設定」中自訂快捷鍵。
+            </p>
+        </div>
+        <div id="others" class="page" style="display: none;">
+            <h3 style="color:#ff8b0d">其他</h3>
+            <ul>
+                <li>
+                    若您在使用本軟體的核心驅動程式時出現藍底白字（藍屏）錯誤，表示該驅動程式不相容於您的系統，我們會持續改進以盡快相容您的系統。<br/>
+                    目前您可以在「軟體進階設定」（若無法開啟軟體，可在啟動本程式時按住「Alt」鍵開啟設定對話框）中勾選「停用軟體核心驅動程式」以解決藍屏問題。
+                </li>
+                <li>
+                    <b>提示：</b>若您在抽取式磁碟（例如隨身碟）中直接執行 JiYuTrainer，為避免長時間佔用隨身碟，系統預設會
+                    將主程式安裝至 C 槽的暫存目錄下，執行後您仍可安全退出隨身碟。
+                </li>
+                <li>
+                    <b>說明：</b>由於本軟體需要對極域電子教室進行必要操作，可能會被部分防毒軟體誤判為病毒，<b>您可能需要暫時關閉防毒軟體或將本軟體加入白名單</b>。
+                </li>
+                <li>
+                    <b>說明：</b>若您學校使用的極域版本導致本軟體無法正常運作，歡迎向作者提供極域安裝檔樣本，我會盡力調整程式以相容更多極域電子教室版本。
+                </li>
+                <li>
+                    <b>若您在軟體使用過程中發現 Bug，或有任何建議，歡迎至專案主頁回報</b><br/>
+                    專案 GitHub 網址：<a href="#" id="link_github" class="link" title="前往 GitHub">JiYu Trainer </a>
+                </li>
+                <li>
+                    <div class="alert alert-success">
+                        如果你喜歡這個軟體，不妨向你的好友推薦一下吧！
+                    </div>
+                </li>
+            </ul>
+
+            <hr />
+            <b style="color:#006bef">已測試的版本：</b>
+            <ul>
+                <li>極域電子教室：4.0 與 6.0（2010 與 2015/2016 版本）</li>
+                <li>已測試的作業系統：Win7、Win10</li>
+            </ul>
+            <b style="color:#006bef">系統需求：</b>
+            <ul>
+                <li>本軟體支援作業系統：Win7 / Win8 / Win8.1 / Win10</li>
+                <li>極域電子教室推薦使用 4.0 / 6.0 版本，其他版本可能無法達到最佳防禦效果</li>
+            </ul>
+            
+            <br />
+        </div>
+        <div id="note" class="page" style="display: none;">
+            <h3 style="color:#ff0000">免責聲明</h3>
+            <div class="alert alert-warning">
+                <b>注意：</b>本軟體研發初衷僅供學習與技術交流使用，<span style="color:red;font-weight:bold;">嚴禁將本軟體用於違反法律或道德規範之行為；擅自用於不正當行為所衍生之任何後果，均由使用者自行承擔！</span>當您開始使用本軟體時，即代表您同意本聲明。
+            </div>
+
+            <hr />
+
+            <p>
+                版權所有 © 2021 快樂的夢魚<br/>
+                <br/>
+                本軟體係為技術學習而開發之免費開源軟體，若有人藉此收費販售，請勿受騙。本軟體永久開源免費，可於 GitHub 專案主頁下載程式與原始碼。<br/>
+                <br/>
+                在您散佈或轉發本軟體時，請尊重作者勞動成果，切勿刪除任何作者標示與署名。
+            </p>
+
+            <br />
+        </div>
+    </div>
+    <div class="catalog">
+        <a data-type="catalog" data-id="introd" style="color: #ff8b0d">介紹</a>
+        <a data-type="catalog" data-id="interface">軟體介面</a>
+        <a data-type="catalog" data-id="bordcast">螢幕廣播視窗的改動</a>
+        <a data-type="catalog" data-id="key">快捷鍵</a>
+        <a data-type="catalog" data-id="others">其他</a>
+        <a data-type="catalog" data-id="note">免責聲明</a>
+    </div>
+    
+    <script type="text/tiscript">
+        function self.ready()
+        {
+            view.docunmentComplete();
+        }
+    </script>
+
+</body>
+</html>
